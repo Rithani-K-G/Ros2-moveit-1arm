@@ -1,0 +1,76 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+      Splitter Ratio: 0.5
+    Tree Height: 450
+  - Class: rviz_common/Views
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: moveit_rviz_plugin/MotionPlanning
+    Name: MotionPlanning
+    MoveIt.Namespace: ""
+    MoveIt.Controller: ""
+    MoveIt.Display.Trajectory Slider: 0
+    MoveIt.MotionPlanning.Display Random Valid: false
+    MoveIt.MotionPlanning.Display Contact Points: false
+    MoveIt.MotionPlanning.Display Workspace: true
+    MoveIt.Octomap.Topic: /monitored_planning_scene
+    MoveIt.Planning Scene Topic: /monitored_planning_scene
+    MoveIt.Visualize Planned Path: true
+    MoveIt.Interactive Marker Size: 0.2
+    MoveIt.Start State Display: true
+    MoveIt.Goal State Display: true
+    MoveIt.Planning Group: arm
+    MoveIt.Planning Pipeline: ompl
+    MoveIt.Planner: RRTConnectkConfigDefault
+    MoveIt.Move Group Namespace: ""
+
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Plane: XY
+      Cell Size: 1
+      Alpha: 0.5
+      Line Style:
+        Line Width: 0.03
+        Value: Lines
+      Color: 160; 160; 164
+    - Class: rviz_default_plugins/RobotModel
+      Name: RobotModel
+      Enabled: true
+      Description Topic:
+        Value: /robot_description
+      Visual Enabled: true
+      Collision Enabled: true
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: world
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 2.5
+      Focal Point: 0; 0; 0.3
+      Pitch: 0.7
+      Yaw: 0.7
+      Name: Current View
+      Target Frame: world
